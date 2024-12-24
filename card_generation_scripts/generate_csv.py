@@ -52,7 +52,7 @@ def generate_explanations(words):
 
     # Send prompt to OpenAI API
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="o1-mini",
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": user_message}
